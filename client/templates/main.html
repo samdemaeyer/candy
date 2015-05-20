@@ -1,0 +1,16 @@
+<template name="main">
+    {{#ionBody}} {{> ionNavBar}} {{#contentFor "headerTitle"}}
+    <h1 class="title">Candyspace CSV</h1> {{/contentFor}} {{#ionNavView}} {{#ionContent}}
+    <ul class="list">
+        {{#sortable items=csvs handle=".badge"}}
+        <li class="item">
+            <h2>{{Name}}</h2>
+            <p>{{Text}}</p>
+            <p>{{Date}}</p>
+            <p class="email">{{Email}}</p>
+            <span class="badge badge-calm">Drag me</span>
+        </li>
+        {{/sortable}}
+    </ul>
+    {{/ionContent}} {{/ionNavView}} {{/ionBody}}
+</template>

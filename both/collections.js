@@ -1,0 +1,1 @@
+CSVS = new Meteor.Collection('csvs');

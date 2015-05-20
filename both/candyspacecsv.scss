@@ -1,0 +1,43 @@
+$loading-font-size: 22px;
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+$candyspace: #8D0379;
+.bar.bar-stable {
+    background-color: $candyspace;
+    .title {
+        color: white;
+    }
+}
+
+.highlight {
+    background-color: aliceblue;
+}
+
+.item p {
+    white-space: normal;
+}
+
+.item p.email {
+    color: $candyspace;
+}
+
+.sortable-ghost {
+    background-color: #932C84;
+    h2, p, p.email {
+        color: white;
+    }
+}
+
+li[draggable=true] {
+    border: 1px solid $candyspace;
+    opacity: 1 !important;
+}
+
+.item .badge {
+    padding: 12px;
+    display: block;
+    position: initial;
+    margin-top: 15px;
+    width: 100px;
+    float: right;
+}
