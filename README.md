@@ -1,5 +1,20 @@
 # candy
-Playing around with CSV
+Playing around with CSV 
+
+## routing
+when opening the app please remember that desktop users will be redirected:
+```javascript
+Router.route('/', {
+  name: 'main',
+  onBeforeAction: function() {
+    if (Meteor.Device.isDesktop()) {
+    	window.location = "http://www.candyspace.com";
+    } else {
+    	this.next();
+    };
+  },
+});
+```
 
 ## task
 
